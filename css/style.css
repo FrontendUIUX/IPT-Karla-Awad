@@ -37,7 +37,7 @@ body {
   }
 
   .test {
-    background: url('media/employee-corner-bg.jpg') center center/cover no-repeat;
+    background: url('../media/employee-corner-bg.jpg') center center/cover no-repeat;
   }
 
   .gg {
@@ -52,7 +52,7 @@ body {
 
   /* Header Styles */
 .header {
-  background: url('media/banner1.png') no-repeat center center/cover;
+  background: url('../media/banner1.png') no-repeat center center/cover;
   color: white;
   height: 700px;
   display: flex;
@@ -295,13 +295,13 @@ body {
     border-radius: 50%;
   }
   .top-bar-pattern {
-background: url('media/top-bar-pattern.jpg') no-repeat center center;
+background: url('../media/top-bar-pattern.jpg') no-repeat center center;
 background-size: cover;
 height: 40px;
 width: 100%;
 }
 .top-bar-pattern {
-  background: url('media/top-bar-pattern.jpg') no-repeat center center;
+  background: url('../media/top-bar-pattern.jpg') no-repeat center center;
   background-size: cover;
   height: 60px; /* Match sidebar width */
   width: 100%;
