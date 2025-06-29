@@ -271,6 +271,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    
   }
 
   .sidebar-icon {
@@ -279,6 +280,8 @@ body {
     text-decoration: none;
     margin-bottom: 1.5rem;
     position: relative;
+    top: -50px;
+    
   }
 
   .sidebar-icon:hover {
@@ -377,8 +380,8 @@ margin-right: 8px;
   
   /* Make the button lighter than the background */
   .welcome-card .btn-outline-light {
-    background-color: rgba(255, 255, 255, 0.5);
-    color: white;
+    background-color: rgb(217, 240, 245);
+    color: rgb(114, 126, 159);
     border-color: rgba(255, 255, 255, 0.4);
     transition: all 0.3s ease;
   }
@@ -386,6 +389,7 @@ margin-right: 8px;
   .welcome-card .btn-outline-light:hover {
     background-color: rgba(255, 255, 255, 0.35);
     color: white;
+
   }
   .welcome-title {
     color: inherit;
@@ -436,4 +440,18 @@ margin-right: 8px;
     align-self: center; /* prevent stretching if inside flex */
     white-space: nowrap;
   }
- 
+  .card-header-custom {
+    background-color: #f2f2f2; /* light gray */
+    border-radius: 6px;
+  }
+  
+  .welcome-card {
+  border-radius: 16px; /* or any value you prefer */
+  overflow: hidden; /* ensures child content respects the rounded corners */
+}
+.btn-read-more {
+  border-radius: 12px; /* adjust this value as you like */
+}
+.welcome-card h5 {
+  margin-top: 0.5rem; /* reduce this value to move titles up */
+}
