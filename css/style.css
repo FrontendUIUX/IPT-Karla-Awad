@@ -40,14 +40,17 @@ body {
     background: url('../media/employee-corner-bg.jpg') center center/cover no-repeat;
   }
 
+  
   .gg {
     position: absolute;
     z-index: 999;
     width: 100%;
-    padding: 40px 50px; 
+    padding-top: 1rem;      
+    padding-bottom: 1rem;   
+    padding-right: 50px;    
     bottom: 630px;
-    
   }
+  
   
 
   .nav-item a {
@@ -319,6 +322,7 @@ width: 100%;
 }
 
 
+
 .navbar-profile {
 display: flex;
 align-items: center;
@@ -335,7 +339,7 @@ margin-right: 8px;
 }
 
 .navbar .navbar-brand img {
-    height: 40px; 
+    height: 50px; 
     width: auto;  
     margin-left: 30px;
   }
@@ -460,10 +464,11 @@ margin-right: 8px;
   margin-top: 0.5rem; /* reduce this value to move titles up */
 }
 .navbar .container-fluid {
-  border-bottom: 1px solid #ccc;
+  border-bottom: 1px solid rgba(204, 204, 204, 0.4);
   padding-left: 30px;
-  margin-left: 30px;
-  
+  margin-left: 90px;
+  padding-bottom: 1rem;
+  width: 99%;
 }
 
 
@@ -520,8 +525,8 @@ margin-right: 8px;
   width: 50px;
   height: 50px;
   z-index: 3;
-  right: 20px;
-  top: 100px;
+  right: 40px;
+  top: 120px;
 
   background-color: rgba(34, 102, 127, 0.3); /* faded bluish tone */
   border: 1px solid rgba(255, 255, 255, 0.3); /* subtle white border */
@@ -536,12 +541,4 @@ margin-right: 8px;
   backdrop-filter: blur(4px); /* adds soft glass effect */
   transition: all 0.3s ease;
 }
-.notification-bell::after {
-  content: "!";
-  position: relative;
-  top: 0px;
-  right: 0px;
-  color: red;
-  font-size: 1rem;
-  font-weight: bold;
-}
+
