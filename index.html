@@ -16,6 +16,7 @@
 <script src="./js/bootstrap.bundle.min.js"></script>
 
 <link rel="stylesheet" href="./css/style.css">
+<link rel="icon" href="./media/favicon.ico" type="image/x-icon" />
 </head>
 
 <body>
@@ -122,14 +123,16 @@
 <div class="col-md-8 d-flex flex-column">
   <div class="card p-4 h-100" style="font-size: 0.875rem; border: 1px solid #ccc; border-radius: 8px;">
     
-    <!-- Header (now inside the bordered card) -->
-    <div class="d-flex justify-content-between align-items-center mb-3">
+    <!-- Header -->
+    <div class="card-header-bg d-flex justify-content-between align-items-center mb-3">
       <h4 class="mb-0">Latest <span class="text-danger">News</span></h4>
       <a href="#" class="text-danger fw-bold text-decoration-none">All News</a>
     </div>
+    
+    
 
     <!-- News Item 1 -->
-    <div class="d-flex align-items-center mb-3 pb-3 border-bottom">
+    <div class="d-flex align-items-center mb-3 pb-3 border-bottom news-item">
       <img src="./media/consumption based model.jpg" alt="News 1" class="me-3 rounded" style="width:60px; height:60px; object-fit:cover;">
       <div class="d-flex justify-content-between align-items-start w-100">
         <div>
@@ -141,7 +144,7 @@
     </div>
 
     <!-- News Item 2 -->
-    <div class="d-flex align-items-center mb-3 pb-3 border-bottom">
+    <div class="d-flex align-items-center mb-3 pb-3 border-bottom news-item">
       <img src="./media/banner2.jpg" alt="News 2" class="me-3 rounded" style="width:60px; height:60px; object-fit:cover;">
       <div class="d-flex justify-content-between align-items-start w-100">
         <div>
@@ -153,7 +156,7 @@
     </div>
 
     <!-- News Item 3 -->
-    <div class="d-flex align-items-center">
+    <div class="d-flex align-items-center news-item">
       <img src="./media/banner3.jpg" alt="News 3" class="me-3 rounded" style="width:60px; height:60px; object-fit:cover;">
       <div class="d-flex justify-content-between align-items-start w-100">
         <div>
@@ -233,70 +236,85 @@
       <section class="energy-story bg-white py-5">
         <div class="container">
           <div class="d-flex align-items-end mb-4">
-            <h3 style="font-size:3rem; font-weight:bold;">Capturing Our Energy Story With <span class="text-danger">Excellence</span></h3>
+            <h3 style="font-size:3rem; font-weight:bold;">
+              Capturing Our Energy Story With 
+              <span class="text-danger d-inline-flex align-items-center gap-2">
+                Excellence
+                <img src="./media/deco.svg" alt="Decoration" class="deco-icon">
+              </span>
+            </h3>
+            
             <p class="text-secondary">We continuously evolve, leveraging advanced technologies and creative solutions to shape our unique energy story through forward-thinking strategies.</p>
           </div>
           
           <div class="row">
             <!-- Card 1: Taller (500px) -->
-            <div class="col-md-4 mb-4">
-              <div class="card energy-card overflow-hidden rounded-2" style="background: url('media/solar-panels-roof-with-cloudy-sky-background.jpg') center center/cover no-repeat; height: 500px;">
-                
-                <!-- Photo Badge -->
-                <span class="position-absolute top-5 end-0 m-0 mt-5 badge d-flex align-items-center gap-1"
-                  style="font-size: 0.8rem; padding: 0.4em 0.6em; border-radius: 10px 0px 0px 10px; background: linear-gradient(90deg, #008b2e 0%, #00f03c 100%); color: #fff;">
-                  <i class="bi bi-image"></i> 10
-                </span>
-            
-                <!-- Blurred Gradient Overlay -->
-                <div class="card-overlay">
-                  <h6 class="card-title-line">Energy in Action</h6>
-                  <small class="text-white-50">June 13, 2024</small>
-                </div>
-              </div>
-            </div>
-            
-            <!-- Card 2: Shorter (300px) -->
-            <div class="col-md-4 mb-4">
-              <div class="card energy-card position-relative overflow-hidden rounded-2" style="background: url('media/empower.jpg') center center/cover no-repeat; height: 300px;">
-                
-                <!-- Photo Badge -->
-                 <span class="position-absolute top-5 end-0 m-0 mt-5 badge d-flex align-items-center gap-1"
-                  style="font-size: 0.8rem; padding: 0.4em 0.6em; border-radius: 10px 0px 0px 10px; background: linear-gradient(90deg, #008b2e 0%, #00f03c 100%); color: #fff;">
-                    <i class="bi bi-image"></i> 18
-                </span>
-          
-                <!-- Gradient Overlay -->
-                <div class="card-overlay">
-                  <h6 class="card-title-line">Empower Together</h6>
-                  <small class="text-white-50">June 9, 2024</small>
-                </div>
-              </div>
-            </div>
-          
-            <!-- Card 3: Medium (400px) -->
-            <div class="col-md-4 mb-4">
-              <div class="card energy-card position-relative overflow-hidden rounded-2" style="background: url('media/all ipt services in 1 picture 2.png') center center/cover no-repeat; height: 400px;">
-                
-                <!-- Photo Badge -->
-                 <span class="position-absolute top-5 end-0 m-0 mt-5 badge d-flex align-items-center gap-1"
-                  style="font-size: 0.8rem; padding: 0.4em 0.6em; border-radius: 10px 0px 0px 10px; background: linear-gradient(90deg, #008b2e 0%, #00f03c 100%); color: #fff;">
-                     <i class="bi bi-image"></i> 5
-                </span>
-          
-                <!-- Gradient Overlay -->
-                <div class="card-overlay">
-                  <h6 class="card-title-line">Power Moments</h6>
-                  <small class="text-white-50">May 5, 2024</small>
-                </div>
-              </div>
-            </div>
-          </div>
+<div class="col-md-4 mb-4">
+  <div class="card energy-card overflow-hidden rounded-2 position-relative" style="background: url('media/solar-panels-roof-with-cloudy-sky-background.jpg') center center/cover no-repeat; height: 500px;">
+
+    <!-- Photo Badge -->
+    <span class="position-absolute top-5 end-0 mt-5 badge d-flex align-items-center gap-1"
+      style="font-size: 1.1rem; padding: 0.6em 1em; border-radius: 4px 0 0 4px; background: linear-gradient(90deg, #008b2e 0%, #00f03c 100%); color: #fff;">
+      <i class="bi bi-image"></i> 10
+    </span>
+
+    <!-- Full Overlay -->
+    <div class="card-overlay-full"></div>
+
+    <!-- Text Content -->
+    <div class="card-overlay-content position-absolute bottom-0 p-3 w-100">
+      <h6 class="card-title-line">Energy in Action</h6>
+      <small class="text-white-50">June 13, 2024</small>
+    </div>
+  </div>
+</div>
+
+<!-- Card 2: Shorter (300px) -->
+<div class="col-md-4 mb-4">
+  <div class="card energy-card overflow-hidden rounded-2 position-relative" style="background: url('media/empower.jpg') center center/cover no-repeat; height: 300px;">
+
+    <!-- Photo Badge -->
+    <span class="position-absolute top-5 end-0 mt-5 badge d-flex align-items-center gap-1"
+      style="font-size: 1.1rem; padding: 0.6em 1em; border-radius: 4px 0 0 4px; background: linear-gradient(90deg, #008b2e 0%, #00f03c 100%); color: #fff;">
+      <i class="bi bi-image"></i> 18
+    </span>
+
+    <!-- Full Overlay -->
+    <div class="card-overlay-full"></div>
+
+    <!-- Text Content -->
+    <div class="card-overlay-content position-absolute bottom-0 p-3 w-100">
+      <h6 class="card-title-line">Empower Together</h6>
+      <small class="text-white-50">June 9, 2024</small>
+    </div>
+  </div>
+</div>
+
+<!-- Card 3: Medium (400px) -->
+<div class="col-md-4 mb-4">
+  <div class="card energy-card overflow-hidden rounded-2 position-relative" style="background: url('media/all ipt services in 1 picture 2.png') center center/cover no-repeat; height: 400px;">
+
+    <!-- Photo Badge -->
+    <span class="position-absolute top-5 end-0 mt-5 badge d-flex align-items-center gap-1"
+      style="font-size: 1.1rem; padding: 0.6em 1em; border-radius: 4px 0 0 4px; background: linear-gradient(90deg, #008b2e 0%, #00f03c 100%); color: #fff;">
+      <i class="bi bi-image"></i> 5
+    </span>
+
+    <!-- Full Overlay -->
+    <div class="card-overlay-full"></div>
+
+    <!-- Text Content -->
+    <div class="card-overlay-content position-absolute bottom-0 p-3 w-100">
+      <h6 class="card-title-line">Power Moments</h6>
+      <small class="text-white-50">May 5, 2024</small>
+    </div>
+  </div>
+</div>
+
           
           <!-- View All Button -->
-          <div class="d-flex justify-content-end mt-2">
-            <a href="#" class="btn btn-danger px-4">View All</a>
-          </div>
+          <a href="#" class="btn btn-danger px-4 rounded-button">View All</a>
+
           
           
         </div>
@@ -309,13 +327,16 @@
             © 2024 PowerTech. All Rights Reserved.
           </div>
       
-          <!-- Right: Social Icons -->
-          <div>
-            <a href="#" class="text-white me-3"><i class="bi bi-youtube"></i></a>
-            <a href="#" class="text-white me-3"><i class="bi bi-globe"></i></a>
-            <a href="#" class="text-white me-3"><i class="bi bi-instagram"></i></a>
-            <a href="#" class="text-white"><i class="bi bi-linkedin"></i></a>
+          
+            <div class="footer-icons">
+              <a href="#" class="social-icon"><i class="bi bi-youtube"></i></a>
+              <a href="#" class="social-icon"><i class="bi bi-globe"></i></a>
+              <a href="#" class="social-icon"><i class="bi bi-instagram"></i></a>
+              <a href="#" class="social-icon"><i class="bi bi-linkedin"></i></a>
+            </div>
           </div>
+          
+          
         </div>
       </footer>
       

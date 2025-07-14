@@ -26,7 +26,7 @@ body {
   .footer {
     background-color: #1a202c;
     color: #fff;
-    padding: 20px;
+    padding: 8px 20px;
     text-align: center;
   }
 
@@ -418,11 +418,17 @@ margin-right: 8px;
   }
   
   .welcome-footer {
-    font-size: 0.7rem;
-    color: rgba(255, 255, 255, 0.8);
-    margin: 0.5rem;
-    margin-bottom: 0.3rem;
+    display: inline-block;
+    font-size: 1rem;      
+    margin-bottom: 5;     
+    line-height: 1.1;    
+    position: relative;
+    top: -6px;            
+    font-weight: 500;     
+    color: rgba(255, 255, 255, 0.9);
   }
+  
+  
   
   .welcome-line-group {
     display: flex;
@@ -441,7 +447,7 @@ margin-right: 8px;
   }
   
   .btn-read-more {
-    font-size: 0.7rem;
+    font-size: 1rem;
     padding: 4px 12px;
     line-height: 1.2;
     width: auto;
@@ -540,5 +546,98 @@ margin-right: 8px;
 
   backdrop-filter: blur(4px); /* adds soft glass effect */
   transition: all 0.3s ease;
+}
+
+
+.rounded-button {
+  border-radius: 19px;
+  display: block;         
+  margin-left: auto;      
+  margin-right: 30px;     
+  width: fit-content;     
+}
+
+
+.card-header-bg {
+  background-color: #e0e0e0; /* your grey color */
+  padding: 15px 20px;        /* enough padding around the content */
+  width: 100%;               /* full width of the parent container */
+  border-radius: 8px 8px 0 0; /* optional, rounds top corners */
+}
+
+/* For the news item container */
+.news-item {
+  padding: 1rem 0; /* more vertical padding */
+}
+
+/* Make images bigger */
+.news-item img {
+  width: 90px;       /* increase width */
+  height: 90px;      /* increase height */
+  object-fit: cover; /*  keep aspect */
+  border-radius: 0.5rem; /* keep rounded corners */
+  flex-shrink: 0;    /* prevent shrinking */
+  margin-right: 1rem; /* spacing to text */
+}
+
+/* Text container inside the news item */
+.news-item > div {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 100%;
+}
+
+/* Date text */
+.news-item small {
+  font-size: 0.85rem; /* slightly bigger */
+  color: #666666;     /* muted text */
+}
+
+/* News headline */
+.news-item p {
+  font-size: 1.1rem; /* bigger headline */
+  font-weight: normal;
+  margin-bottom: 0;
+  color: #222222;
+}
+
+/* Icon size */
+.news-item i {
+  font-size: 1.5rem; /* bigger icon */
+  margin-left: 1rem;
+}
+
+.energy-card .badge {
+  font-size: 1.1rem;
+  padding: 0.6em 1em;
+  border-radius:  4px 0 0 4px;
+}
+
+.energy-card .badge i {
+  font-size: 1.3rem;
+  margin-right: 0.5rem;
+}
+
+.card-overlay-full {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 20%; 
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.30), transparent);
+  backdrop-filter: blur(4px);
+  z-index: 1;
+}
+
+
+.card-overlay-content {
+  z-index: 2;
+  color: white;
+}
+
+.deco-icon {
+  height: 36px;   /* increase or decrease as needed */
+  width: auto;
 }
 
