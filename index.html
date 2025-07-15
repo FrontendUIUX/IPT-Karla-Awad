@@ -120,55 +120,60 @@
     <div class="row g-4 align-items-stretch">
       
       <!-- Latest News (Left Column) -->
+<!-- Latest News (Left Column) -->
 <div class="col-md-8 d-flex flex-column">
-  <div class="card p-4 h-100" style="font-size: 0.875rem; border: 1px solid #ccc; border-radius: 8px;">
+  <div class="card h-100" style="font-size: 0.875rem; border: 1px solid #ccc; border-radius: 8px; overflow: hidden;">
     
-    <!-- Header -->
-    <div class="card-header-bg d-flex justify-content-between align-items-center mb-3">
+    <!-- Header: full width background -->
+    <div style="background-color: #f8f9fa;" class="w-100 px-4 py-3 d-flex justify-content-between align-items-center">
       <h4 class="mb-0">Latest <span class="text-danger">News</span></h4>
       <a href="#" class="text-danger fw-bold text-decoration-none">All News</a>
     </div>
-    
-    
 
-    <!-- News Item 1 -->
-    <div class="d-flex align-items-center mb-3 pb-3 border-bottom news-item">
-      <img src="./media/consumption based model.jpg" alt="News 1" class="me-3 rounded" style="width:60px; height:60px; object-fit:cover;">
-      <div class="d-flex justify-content-between align-items-start w-100">
-        <div>
-          <small class="text-muted">June 11, 2024</small>
-          <p class="mb-0">Subsidiary Delivers Solutions for Lebanon’s Mobile Network</p>
-        </div>
-        <i class="bi bi-box-arrow-up-right text-secondary ms-3 fs-5"></i>
-      </div>
-    </div>
+    <!-- Card body with padding -->
+    <div class="p-4">
 
-    <!-- News Item 2 -->
-    <div class="d-flex align-items-center mb-3 pb-3 border-bottom news-item">
-      <img src="./media/banner2.jpg" alt="News 2" class="me-3 rounded" style="width:60px; height:60px; object-fit:cover;">
-      <div class="d-flex justify-content-between align-items-start w-100">
-        <div>
-          <small class="text-muted">June 5, 2024</small>
-          <p class="mb-0">Prefabricated Telecom Data Centre Modules Tested in Croatia</p>
+      <!-- News Item 1 -->
+      <div class="d-flex align-items-center mb-3 pb-3 border-bottom news-item">
+        <img src="./media/consumption based model.jpg" alt="News 1" class="me-3 rounded" style="width:60px; height:60px; object-fit:cover;">
+        <div class="d-flex justify-content-between align-items-start w-100">
+          <div>
+            <small class="text-muted">June 11, 2024</small>
+            <p class="mb-0">Subsidiary Delivers Solutions for Lebanon’s Mobile Network</p>
+          </div>
+          <i class="bi bi-box-arrow-up-right text-secondary ms-3 fs-5"></i>
         </div>
-        <i class="bi bi-box-arrow-up-right text-danger ms-3 fs-5"></i>
       </div>
-    </div>
 
-    <!-- News Item 3 -->
-    <div class="d-flex align-items-center news-item">
-      <img src="./media/banner3.jpg" alt="News 3" class="me-3 rounded" style="width:60px; height:60px; object-fit:cover;">
-      <div class="d-flex justify-content-between align-items-start w-100">
-        <div>
-          <small class="text-muted">May 25, 2024</small>
-          <p class="mb-0">Showcasing Hybrid Solutions for MNOs and TowerCos in Kenya!</p>
+      <!-- News Item 2 -->
+      <div class="d-flex align-items-center mb-3 pb-3 border-bottom news-item">
+        <img src="./media/banner2.jpg" alt="News 2" class="me-3 rounded" style="width:60px; height:60px; object-fit:cover;">
+        <div class="d-flex justify-content-between align-items-start w-100">
+          <div>
+            <small class="text-muted">June 5, 2024</small>
+            <p class="mb-0">Prefabricated Telecom Data Centre Modules Tested in Croatia</p>
+          </div>
+          <i class="bi bi-box-arrow-up-right text-danger ms-3 fs-5"></i>
         </div>
-        <i class="bi bi-box-arrow-up-right text-secondary ms-3 fs-5"></i>
       </div>
-    </div>
+
+      <!-- News Item 3 -->
+      <div class="d-flex align-items-center news-item">
+        <img src="./media/banner3.jpg" alt="News 3" class="me-3 rounded" style="width:60px; height:60px; object-fit:cover;">
+        <div class="d-flex justify-content-between align-items-start w-100">
+          <div>
+            <small class="text-muted">May 25, 2024</small>
+            <p class="mb-0">Showcasing Hybrid Solutions for MNOs and TowerCos in Kenya!</p>
+          </div>
+          <i class="bi bi-box-arrow-up-right text-secondary ms-3 fs-5"></i>
+        </div>
+      </div>
+
+    </div> <!-- End .p-4 -->
 
   </div>
 </div>
+
 
 
       <!-- Welcome Card (Right Column) -->
@@ -320,25 +325,33 @@
         </div>
       </section>
 
-      <footer class="text-white py-3" style="background: url('media/top-bar-pattern.png') repeat, #22667f;">
-        <div class="container d-flex flex-column flex-md-row justify-content-between align-items-center">
-          <!-- Left: Copyright -->
-          <div class="mb-2 mb-md-0 small">
-            © 2024 PowerTech. All Rights Reserved.
-          </div>
-      
-          
-            <div class="footer-icons">
-              <a href="#" class="social-icon"><i class="bi bi-youtube"></i></a>
-              <a href="#" class="social-icon"><i class="bi bi-globe"></i></a>
-              <a href="#" class="social-icon"><i class="bi bi-instagram"></i></a>
-              <a href="#" class="social-icon"><i class="bi bi-linkedin"></i></a>
-            </div>
-          </div>
-          
-          
-        </div>
-      </footer>
+      <footer class="text-white py-4" style="background: url('media/top-bar-pattern.png') repeat, #22667f;">
+  <div class="container d-flex flex-column flex-md-row justify-content-between align-items-center">
+    
+    <!-- Left: Copyright -->
+    <div class="mb-3 mb-md-0 small">
+      © 2024 PowerTech. All Rights Reserved.
+    </div>
+
+    <!-- Right: Social Icons -->
+    <div class="footer-icons d-flex gap-3">
+      <a href="#" class="social-icon d-flex align-items-center justify-content-center">
+        <i class="bi bi-youtube"></i>
+      </a>
+      <a href="#" class="social-icon d-flex align-items-center justify-content-center">
+        <i class="bi bi-globe"></i>
+      </a>
+      <a href="#" class="social-icon d-flex align-items-center justify-content-center">
+        <i class="bi bi-instagram"></i>
+      </a>
+      <a href="#" class="social-icon d-flex align-items-center justify-content-center">
+        <i class="bi bi-linkedin"></i>
+      </a>
+    </div>
+
+  </div>
+</footer>
+
       
     </div>
   </div>
