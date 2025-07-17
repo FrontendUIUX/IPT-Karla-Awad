@@ -313,7 +313,7 @@ width: 100%;
 .top-bar-pattern {
   background: url('../media/top-bar-pattern.jpg') no-repeat center center;
   background-size: cover;
-  height: 60px; /* Match sidebar width */
+  height: 3.5rem; 
   width: 100%;
   display: flex;
   justify-content: flex-end;
