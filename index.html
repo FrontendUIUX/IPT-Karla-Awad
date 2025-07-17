@@ -33,9 +33,9 @@
   <header>
   
   <!-- Navbar -->
-<nav class="navbar navbar-expand-lg gg mt-0 pt-0">
+<nav class="navbar navbar-expand-lg gg ">
   <div class="container-fluid">
-    <a class="navbar-brand ms-5" href="#"><img src="./media/logo.png" alt=""></a>
+    <a class="navbar-brand " href="#"><img src="./media/logo.png" alt=""></a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -125,7 +125,7 @@
   <div class="card h-100" style="font-size: 0.875rem; border: 1px solid #ccc; border-radius: 8px; overflow: hidden;">
     
     <!-- Header: full width background -->
-    <div style="background-color: #f8f9fa;" class="w-100 px-4 py-3 d-flex justify-content-between align-items-center">
+    <div style="background-color: #f8f9fa;" class="w-100 px-5 py-4 d-flex justify-content-between align-items-center">
       <h4 class="mb-0">Latest <span class="text-danger">News</span></h4>
       <a href="#" class="text-danger fw-bold text-decoration-none">All News</a>
     </div>
@@ -135,37 +135,62 @@
 
       <!-- News Item 1 -->
       <div class="d-flex align-items-center mb-3 pb-3 border-bottom news-item">
-        <img src="./media/consumption based model.jpg" alt="News 1" class="me-3 rounded" style="width:60px; height:60px; object-fit:cover;">
+        <img src="./media/consumption based model.jpg" alt="News 1" class="me-3 rounded" style="width:90px; height:90px; object-fit:cover;">
         <div class="d-flex justify-content-between align-items-start w-100">
           <div>
-            <small class="text-muted">June 11, 2024</small>
-            <p class="mb-0">Subsidiary Delivers Solutions for Lebanon’s Mobile Network</p>
+            <small class="text-muted  date-with-icon">
+              <img src="./media/date.svg" alt="Date Icon" style="width: 16px; height: 16px;"> 
+              JUNE 11, 2024
+            </small>
+            
+            <p class="mb-0">
+              Subsidiary Delivers Solutions for Lebanon’s<br>
+              Mobile Network
+            </p>
+            
           </div>
-          <i class="bi bi-box-arrow-up-right text-secondary ms-3 fs-5"></i>
+          <i class="bi bi-box-arrow-up-right icon-hover ms-3 fs-5"></i>
         </div>
       </div>
 
       <!-- News Item 2 -->
       <div class="d-flex align-items-center mb-3 pb-3 border-bottom news-item">
-        <img src="./media/banner2.jpg" alt="News 2" class="me-3 rounded" style="width:60px; height:60px; object-fit:cover;">
+        <img src="./media/banner2.jpg" alt="News 2" class="me-3 rounded" style="width:90px; height:90px; object-fit:cover;">
         <div class="d-flex justify-content-between align-items-start w-100">
           <div>
-            <small class="text-muted">June 5, 2024</small>
-            <p class="mb-0">Prefabricated Telecom Data Centre Modules Tested in Croatia</p>
+            <small class="text-muted date-with-icon">
+              <img src="./media/date.svg" alt="Date Icon" style="width: 16px; height: 16px;"> 
+              JUNE 5, 2024
+            </small>
+            
+            <p class="mb-0">
+              Prefabricated Telecom Data Centre Modules<br>
+              Tested in Croatia
+            </p>
+            
           </div>
-          <i class="bi bi-box-arrow-up-right text-danger ms-3 fs-5"></i>
+          <i class="bi bi-box-arrow-up-right icon-hover ms-3 fs-5"></i>
+
         </div>
       </div>
 
       <!-- News Item 3 -->
       <div class="d-flex align-items-center news-item">
-        <img src="./media/banner3.jpg" alt="News 3" class="me-3 rounded" style="width:60px; height:60px; object-fit:cover;">
+        <img src="./media/banner3.jpg" alt="News 3" class="me-3 rounded" style="width:90px; height:90px; object-fit:cover;">
         <div class="d-flex justify-content-between align-items-start w-100">
           <div>
-            <small class="text-muted">May 25, 2024</small>
-            <p class="mb-0">Showcasing Hybrid Solutions for MNOs and TowerCos in Kenya!</p>
+            <small class="text-muted date-with-icon">
+              <img src="./media/date.svg" alt="Date Icon" style="width: 16px; height: 16px;"> 
+              MAY 25, 2024
+            </small>
+            
+            <p class="mb-0">
+              Showcasing Hybrid Solutions for MNOs<br>
+              TowerCos in Kenya!
+            </p>
+            
           </div>
-          <i class="bi bi-box-arrow-up-right text-secondary ms-3 fs-5"></i>
+          <i class="bi bi-box-arrow-up-right icon-hover ms-3 fs-5"></i>
         </div>
       </div>
 
@@ -199,10 +224,9 @@
               </div>
             
               <div class="welcome-line-group">
-                <hr class="welcome-line">
                 <small class="welcome-footer">At IPT PowerTech</small>
-                <hr class="welcome-line">
               </div>
+              
             </h5>
             <a href="#" class="btn btn-outline-light mt-2 btn-read-more">Read More</a>
 
@@ -240,17 +264,27 @@
 
       <section class="energy-story bg-white py-5">
         <div class="container">
-          <div class="d-flex align-items-end mb-4">
-            <h3 style="font-size:3rem; font-weight:bold;">
-              Capturing Our Energy Story With 
-              <span class="text-danger d-inline-flex align-items-center gap-2">
-                Excellence
-                <img src="./media/deco.svg" alt="Decoration" class="deco-icon">
-              </span>
-            </h3>
-            
-            <p class="text-secondary">We continuously evolve, leveraging advanced technologies and creative solutions to shape our unique energy story through forward-thinking strategies.</p>
+          <div class="d-flex align-items-start mb-4 gap-4">
+            <div style="max-width: 50%;">
+              <h3 style="font-size:3rem; font-weight:bold; line-height: 1.2; margin-bottom: 0;">
+                Capturing Our Energy<br>
+                <span style="color: black;">
+                  Story With
+                </span>
+                <span class="text-danger d-inline-flex align-items-center gap-2">
+                  Excellence
+                  <img src="./media/deco.svg" alt="Decoration" class="deco-icon">
+                </span>
+              </h3>
+            </div>
+          
+            <p class="text-secondary" style="max-width: 50%; line-height: 1.4; margin-bottom: 0; margin-left: 18rem; margin-top: 3rem; ">
+              We continuously evolve, leveraging advanced technologies<br>
+              and creative solutions to shape our unique energy story<br>
+              through forward-thinking strategies.
+            </p>
           </div>
+          
           
           <div class="row">
             <!-- Card 1: Taller (500px) -->
@@ -263,20 +297,23 @@
       <i class="bi bi-image"></i> 10
     </span>
 
-    <!-- Full Overlay -->
-    <div class="card-overlay-full"></div>
+    
+
+    <!-- Blurred gradient overlay at bottom -->
+    <div class="card-overlay-bottom"></div>
 
     <!-- Text Content -->
-    <div class="card-overlay-content position-absolute bottom-0 p-3 w-100">
+    <div class="card-overlay-content position-absolute bottom-0 p-3 w-100" style="z-index: 3;">
       <h6 class="card-title-line">Energy in Action</h6>
       <small class="text-white-50">June 13, 2024</small>
     </div>
   </div>
 </div>
 
+
 <!-- Card 2: Shorter (300px) -->
 <div class="col-md-4 mb-4">
-  <div class="card energy-card overflow-hidden rounded-2 position-relative" style="background: url('media/empower.jpg') center center/cover no-repeat; height: 300px;">
+  <div class="card energy-card overflow-hidden rounded-2 position-relative" style="background: url('media/empower.jpg') center center/cover no-repeat; height: 350px; margin-top: 20px;">
 
     <!-- Photo Badge -->
     <span class="position-absolute top-5 end-0 mt-5 badge d-flex align-items-center gap-1"
@@ -285,7 +322,8 @@
     </span>
 
     <!-- Full Overlay -->
-    <div class="card-overlay-full"></div>
+    <
+    <div class="card-overlay-bottom"></div>
 
     <!-- Text Content -->
     <div class="card-overlay-content position-absolute bottom-0 p-3 w-100">
@@ -297,7 +335,7 @@
 
 <!-- Card 3: Medium (400px) -->
 <div class="col-md-4 mb-4">
-  <div class="card energy-card overflow-hidden rounded-2 position-relative" style="background: url('media/all ipt services in 1 picture 2.png') center center/cover no-repeat; height: 400px;">
+  <div class="card energy-card overflow-hidden rounded-2 position-relative" style="background: url('media/all ipt services in 1 picture 2.png') center center/cover no-repeat; height: 450px;">
 
     <!-- Photo Badge -->
     <span class="position-absolute top-5 end-0 mt-5 badge d-flex align-items-center gap-1"
@@ -306,7 +344,8 @@
     </span>
 
     <!-- Full Overlay -->
-    <div class="card-overlay-full"></div>
+    
+    <div class="card-overlay-bottom"></div>
 
     <!-- Text Content -->
     <div class="card-overlay-content position-absolute bottom-0 p-3 w-100">
@@ -325,7 +364,7 @@
         </div>
       </section>
 
-      <footer class="text-white py-4" style="background: url('media/top-bar-pattern.png') repeat, #22667f;">
+      <footer class="text-white py-4" style="background: url('media/top-bar-pattern.png') repeat, #22667f; border-bottom: 15px solid #1E627E;">
   <div class="container d-flex flex-column flex-md-row justify-content-between align-items-center">
     
     <!-- Left: Copyright -->

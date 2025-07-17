@@ -61,7 +61,7 @@ body {
 .header {
   background: url('../media/banner1.png') no-repeat center center/cover;
   color: white;
-  height: 700px;
+  height: 100vh ;
   display: flex;
   align-items: flex-end;
   position: relative;
@@ -343,6 +343,11 @@ margin-right: 8px;
     width: auto;  
     margin-left: 30px;
   }
+  .navbar-brand img {
+    margin: 0;
+    
+  }
+  
   .card-title-line {
     position: relative;
     color: white;
@@ -427,7 +432,7 @@ margin-right: 8px;
     font-weight: 500;     
     color: rgba(255, 255, 255, 0.9);
   }
-  
+    
   
   
   .welcome-line-group {
@@ -448,7 +453,7 @@ margin-right: 8px;
   
   .btn-read-more {
     font-size: 1rem;
-    padding: 4px 12px;
+    padding: 10px 20px;
     line-height: 1.2;
     width: auto;
     align-self: center; /* prevent stretching if inside flex */
@@ -656,3 +661,167 @@ margin-right: 8px;
   background-color: #005a87; /* lighter on hover */
   color: white;
 }
+.text-limited-width {
+  max-width: 300px; /* adjust as needed */
+  word-wrap: break-word; /* ensures long words break */
+}
+.deco-icon {
+  height: 36px;
+  width: auto;
+}
+.icon-hover {
+  color: black;
+  transition: color 0.3s ease;
+}
+
+.icon-hover:hover {
+  color: red;
+}
+.date-with-icon {
+  margin-left: -5px; /* Adjust the value as needed */
+  display: flex;
+  align-items: center;
+  gap: 1px; /* space between icon and date */
+}
+
+.welcome-line-group {
+  text-align: center;
+  margin: 2em 0;
+}
+
+.welcome-footer {
+  position: relative;
+  display: inline-block;
+  padding: 0 1em; /* space between text and lines */
+  color: rgba(255, 255, 255, 0.9)
+  font-size: 1rem;
+}
+
+.welcome-footer::before,
+.welcome-footer::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  width: 30px; /* adjust line length */
+  height: 1px;
+  background-color: rgba(255, 255, 255, 0.9)
+}
+
+.welcome-footer::before {
+  left: -20px; 
+}
+
+.welcome-footer::after {
+  right: -20px;
+}
+.energy-card {
+  position: relative;
+  background: url('media/solar-panels-roof-with-cloudy-sky-background.jpg') center center/cover no-repeat;
+  height: 500px;
+  overflow: hidden;
+}
+
+/* Black overlay over entire card */
+.energy-card::before {
+  content: "";
+  position: absolute;
+  inset: 0; /* top:0; right:0; bottom:0; left:0; */
+  background-color: black;
+  opacity: 0.4;
+  pointer-events: none;
+  z-index: 1;
+}
+
+
+.energy-card::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 20%; 
+  backdrop-filter: blur(8px); 
+  -webkit-backdrop-filter: blur(8px); 
+  pointer-events: none;
+  z-index: 2;
+  background-color: linear-gradient(to top,
+  rgba(128, 128, 128, 0.3) 0%,    
+  rgba(128, 128, 128, 0.15) 70%,  
+  rgba(128, 128, 128, 0) 100%); 
+}
+
+.energy-card > * {
+  position: relative;
+  z-index: 3;
+}
+
+@font-face {
+  font-family: 'Din Bold';
+  src: url('../fonts/Din Bold.otf') format('opentype');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Din Medium';
+  src: url('../fonts/Din Medium.otf') format('opentype');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'DIN2014 Regular';
+  src: url('../fonts/DIN2014-Regular.ttf') format('truetype');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Lato Black';
+  src: url('../fonts/Lato-Black.ttf') format('truetype');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Lato Bold';
+  src: url('../fonts/Lato-Bold.ttf') format('truetype');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Lato Regular';
+  src: url('../fonts/Lato-Regular.ttf') format('truetype');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Lato SemiBold';
+  src: url('../fonts/Lato-SemiBold.ttf') format('truetype');
+  font-display: swap;
+}
+.title-container {
+  max-width: 50%;
+}
+
+.main-title {
+  font-size: 3rem;
+  line-height: 1.2;
+  margin-bottom: 0;
+  font-family: 'DIN2014 Regular', sans-serif;
+  font-weight: 400 !important;
+}
+
+.subtitle {
+  color: black;
+  font-family: 'Din Medium', sans-serif;
+  font-weight: 400 !important;
+}
+
+.highlight {
+  font-family: 'Lato Regular', sans-serif;
+  font-weight: 400 !important;
+}
+
+
+
+
+
+
+
