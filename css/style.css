@@ -382,8 +382,8 @@ margin-right: 8px;
   color: white;
 }
 .fake-slider-dots .dot {
-  width: 8px;
-  height: 8px;
+  width: 10px;
+  height: 10px;
   background-color: rgba(255, 255, 255, 0.5);
   border-radius: 50%;
   display: inline-block;
@@ -585,7 +585,7 @@ padding: 1rem 0; /* more vertical padding */
 /* Make images bigger */
 .news-item img {
 width: 90px;       /* increase width */
-height: 90px;      /* increase height */
+height: 100px;      /* increase height */
 object-fit: cover; /*  keep aspect */
 border-radius: 0.5rem; /* keep rounded corners */
 flex-shrink: 0;    /* prevent shrinking */
@@ -1083,4 +1083,21 @@ transition: none;
 .nav-link {
   padding: 0.5rem 1rem !important;
 }
+}
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* Logo left, nav content right */
+  padding-left: 30px;  /* or your existing padding */
+  padding-right: 30px; /* add some right padding */
+}
+
+.navbar-collapse {
+  margin-left: auto; /* Push nav content to the right */
+  display: flex !important; /* Make sure nav items are flex */
+  justify-content: flex-end;
+  width: auto; /* avoid full width */
+}
+h4 {
+  font-weight: 600;
 }
