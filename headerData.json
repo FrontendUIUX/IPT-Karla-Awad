@@ -1,0 +1,17 @@
+[
+  {
+    "id": 1,
+    "title": "Pioneering Telecom, Power, and Automotive Innovations for a better Future",
+    "backgroundImage": "./media/banner1.png"
+  },
+  {
+    "id": 2,
+    "title": "Driving sustainable energy solutions for tomorrow's world",
+    "backgroundImage": "./media/banner2.jpg"
+  },
+  {
+    "id": 3,
+    "title": "Transforming connectivity with cutting-edge technology",
+    "backgroundImage": "./media/banner3.jpg"
+  }
+]

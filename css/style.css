@@ -65,6 +65,7 @@ align-items: flex-end;
 position: relative;
 padding-top: 110px; /* Space for navbar */
 margin-top: -110px; /* Pull up to overlap */
+transition: background-image 0.5s ease-in-out;
 }
 
 .header-overlay {
@@ -128,6 +129,7 @@ margin-bottom: 0;
 max-width: 800px;
 text-shadow: 0 2px 4px rgba(0,0,0,0.3);
 flex: 1;
+transition: opacity 0.3s ease;
 }
 
 /* Right-aligned Pagination Styles */
@@ -688,9 +690,11 @@ color: red;
 margin-left: -5px; /* Adjust the value as needed */
 display: flex;
 align-items: center;
-gap: 1px; /* space between icon and date */
+ 
 }
-
+.date-with-icon img {
+  margin-right: 4px; /* Adjust as needed to bring closer */
+}
 .welcome-line-group {
 text-align: center;
 margin: 2em 0;
@@ -984,120 +988,104 @@ body {
 }
 }
 
-/* Utility classes for responsive spacing */
-@media (max-width: 991px) {
-.py-md-5 {
-  padding-top: 2rem !important;
-  padding-bottom: 2rem !important;
-}
-
-.mb-md-4 {
-  margin-bottom: 1.5rem !important;
-}
-
-.px-md-4 {
-  padding-left: 1.5rem !important;
-  padding-right: 1.5rem !important;
-}
-}
-
 /* Responsive grid adjustments */
 @media (max-width: 767px) {
-.row.g-4 {
-  margin-left: -10px;
-  margin-right: -10px;
-}
-
-.row.g-4 > [class^="col-"] {
-  padding-left: 10px;
-  padding-right: 10px;
-}
+  .row.g-4 {
+    margin-left: -10px;
+    margin-right: -10px;
+  }
+  
+  .row.g-4 > [class^="col-"] {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
 }
 
 /* Mobile menu styles */
 .navbar-collapse {
-position: absolute;
-top: 100%;
-right: 15px;
-width: 250px;
-background: #22667f;
-border-radius: 4px;
-box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
-z-index: 1000;
-max-height: 0;
-overflow: hidden;
-transition: max-height 0.3s ease-out;
+  position: absolute;
+  top: 100%;
+  right: 15px;
+  width: 250px;
+  background: #22667f;
+  border-radius: 4px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  z-index: 1000;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease-out;
 }
 
 .navbar-collapse.show {
-max-height: 500px; /* Adjust based on your content */
+  max-height: 500px; /* Adjust based on your content */
 }
 
 .mobile-menu-container {
-padding: 15px;
+  padding: 15px;
 }
 
 .navbar-nav {
-flex-direction: column !important;
+  flex-direction: column !important;
 }
 
 .nav-item {
-width: 100%;
-padding: 8px 0;
+  width: 100%;
+  padding: 8px 0;
 }
 
 .nav-link {
-padding: 8px 12px !important;
+  padding: 8px 12px !important;
 }
 
 /* Remove default Bootstrap collapse behavior */
 .navbar-collapse.collapsing {
-height: auto;
-transition: none;
+  height: auto;
+  transition: none;
 }
 
 /* Adjust for larger screens */
 @media (min-width: 992px) {
-.navbar-collapse {
-  position: static;
-  width: auto;
-  background: transparent;
-  box-shadow: none;
-  max-height: none;
-  overflow: visible;
+  .navbar-collapse {
+    position: static;
+    width: auto;
+    background: transparent;
+    box-shadow: none;
+    max-height: none;
+    overflow: visible;
+  }
+  
+  .mobile-menu-container {
+    padding: 0;
+  }
+  
+  .navbar-nav {
+    flex-direction: row !important;
+  }
+  
+  .nav-item {
+    width: auto;
+    padding: 0;
+  }
+  
+  .nav-link {
+    padding: 0.5rem 1rem !important;
+  }
 }
 
-.mobile-menu-container {
-  padding: 0;
-}
-
-.navbar-nav {
-  flex-direction: row !important;
-}
-
-.nav-item {
-  width: auto;
-  padding: 0;
-}
-
-.nav-link {
-  padding: 0.5rem 1rem !important;
-}
-}
-.navbar {
-  display: flex;
-  align-items: center;
-  justify-content: space-between; /* Logo left, nav content right */
-  padding-left: 30px;  /* or your existing padding */
-  padding-right: 30px; /* add some right padding */
-}
-
-.navbar-collapse {
-  margin-left: auto; /* Push nav content to the right */
-  display: flex !important; /* Make sure nav items are flex */
-  justify-content: flex-end;
-  width: auto; /* avoid full width */
-}
-h4 {
-  font-weight: 600;
-}
+.slider-dots .dot {
+    width: 13px;
+    height: 13px;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+  }
+  
+  .slider-dots .dot.active {
+    background-color: white;
+  }
+  
+  .welcome-card-container {
+    position: relative;
+  }
