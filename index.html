@@ -39,33 +39,33 @@
     </div>
   </div>
   <div class="header-container">
-  <header>
   
+    <header>
   <!-- Navbar -->
-<nav class="navbar navbar-expand-lg gg">
-  <div class="container-fluid">
-    <a class="navbar-brand " href="#"><img src="./media/logo.png" alt=""></a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-  
+  <nav class="navbar navbar-expand-lg gg">
+    <div class="container-fluid">
+      <!-- Logo on the left -->
+      <a class="navbar-brand" href="#"><img src="./media/logo.png" alt=""></a>
+      
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
 
-    <div class="collapse navbar-collapse" id="navbarNav">
-       <div class="mobile-menu-container">
-      <ul class="navbar-nav ms-auto align-items-center">
-        <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
-        <li class="nav-item"><a class="nav-link" href="#">Media Gallery</a></li>
-        <li class="nav-item"><a class="nav-link" href="#">Policies & Procedures</a></li>
-        <li class="nav-item"><a class="nav-link" href="#">Document Templates</a></li>
-        <li class="nav-item"><a class="nav-link" href="#">Vacancies</a></li>
-        <li class="nav-item ms-3">
-          <a class="nav-link" href="#"><i class="bi bi-search fs-5"></i></a>
-        </li>
-      </ul>
+      <!-- Navigation items - will collapse on smaller screens -->
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">  <!-- ms-auto pushes items to the right -->
+          <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Media Gallery</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Policies & Procedures</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Document Templates</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Vacancies</a></li>
+          <li class="nav-item ms-3">
+            <a class="nav-link" href="#"><i class="bi bi-search fs-5"></i></a>
+          </li>
+        </ul>
       </div>  
     </div>
-  </div>
-</nav>
+  </nav>
 </header>
 
 <!-- Thin Line Below Navbar -->
@@ -127,81 +127,86 @@
     <div class="row g-4 align-items-stretch">
       
       <!-- Latest News (Left Column) -->
-      <div class="col-md-8 d-flex flex-column">
-        <div class="card h-100" style="font-size: 0.875rem; border: 1px solid #ccc; border-radius: 8px; overflow: hidden;">
-          
-          <!-- Header: full width background -->
-          <div style="background-color: #f8f9fa;" class="w-100 px-5 py-4 d-flex justify-content-between align-items-center">
-            <h4 class="mb-0"><b> Latest <span class="text-danger">News</span></b></h4>
-            <a href="#" class="text-danger fw-bold text-decoration-none">All News</a>
-          </div>
+<div class="col-md-8 d-flex flex-column">
+  <div class="card h-100" style="font-size: 0.875rem; border: 1px solid #ccc; border-radius: 8px; overflow: hidden;">
+    
+    <!-- Header: full width background -->
+    <div style="background-color: #f8f9fa;" class="w-100 px-5 py-3 d-flex justify-content-between align-items-center">
+      <h4 class="mb-0 ps-2"><b> Latest <span class="text-danger">News</span></b></h4>
+      <a href="#" class="text-danger fw-bold text-decoration-none pe-3">All News</a>
+    </div>
 
-          <!-- Card body with padding -->
-          <div class="p-4">
+    <!-- Card body with padding -->
+<div class="px-5 py-3">
 
-            <!-- News Item 1 -->
-            <div class="d-flex align-items-center mb-3 pb-3 border-bottom news-item">
-              <img src="./media/consumption based model.jpg" alt="News 1" class="me-3 rounded" style="width:90px; height:90px; object-fit:cover;">
-              <div class="d-flex justify-content-between align-items-start w-100">
-                <div>
-                  <small class="text-muted date-with-icon d-flex align-items-center ">
-                    <img src="./media/date.svg" alt="Date Icon" style="width: 16px; height: 16px;">
-                    JUNE 11, 2024
-                  </small>
-                  
-                  <p class="mb-0">
-                    Subsidiary Delivers Solutions for Lebanon's<br>
-                    Mobile Network
-                  </p>
-                  
-                </div>
-                <i class="bi bi-box-arrow-up-right icon-hover ms-3 fs-5"></i>
-              </div>
-            </div>
-
-            <!-- News Item 2 -->
-            <div class="d-flex align-items-center mb-3 pb-3 border-bottom news-item">
-              <img src="./media/banner2.jpg" alt="News 2" class="me-3 rounded" style="width:90px; height:90px; object-fit:cover;">
-              <div class="d-flex justify-content-between align-items-start w-100">
-                <div>
-                  <small class="text-muted date-with-icon">
-                    <img src="./media/date.svg" alt="Date Icon" style="width: 16px; height: 16px;"> 
-                    JUNE 5, 2024
-                  </small>
-                  
-                  <p class="mb-0">
-                    Prefabricated Telecom Data Centre Modules<br>
-                    Tested in Croatia
-                  </p>
-                  
-                </div>
-                <i class="bi bi-box-arrow-up-right icon-hover ms-3 fs-5"></i>
-              </div>
-            </div>
-
-            <!-- News Item 3 -->
-            <div class="d-flex align-items-center news-item">
-              <img src="./media/banner3.jpg" alt="News 3" class="me-3 rounded" style="width:90px; height:90px; object-fit:cover;">
-              <div class="d-flex justify-content-between align-items-start w-100">
-                <div>
-                  <small class="text-muted date-with-icon">
-                    <img src="./media/date.svg" alt="Date Icon" style="width: 16px; height: 16px;"> 
-                    MAY 25, 2024
-                  </small>
-                  
-                  <p class="mb-0">
-                    Showcasing Hybrid Solutions for MNOs<br>
-                    TowerCos in Kenya!
-                  </p>
-                  
-                </div>
-                <i class="bi bi-box-arrow-up-right icon-hover ms-3 fs-5"></i>
-              </div>
-            </div>
-
-          </div> <!-- End .p-4 -->
-        </div>
+  <!-- News Item 1 -->
+  <a href="#" class="d-flex align-items-center mb-3 pb-3 border-bottom news-item ps-2 text-decoration-none text-dark">
+    <img src="./media/consumption based model.jpg" alt="News 1" class="me-3 rounded d-none d-md-block" style="width:90px; height:90px; object-fit:cover;">
+    <div class="d-flex justify-content-between align-items-start w-100">
+      <div>
+        <small class="text-muted date-with-icon d-flex align-items-center">
+          <img src="./media/date.svg" alt="Date Icon" style="width: 16px; height: 16px; margin-right: 5px;">
+          JUNE 11, 2024
+        </small>
+        <p class="mb-0 mt-1">
+          Subsidiary Delivers Solutions for Lebanon's<br>
+          Mobile Network
+        </p>
       </div>
+      <svg width="28" height="29"  style="position: relative; top: 30px;" viewBox="0 0 33 32" fill="none" xmlns="http://www.w3.org/2000/svg" class="d-none d-md-block hover-red">
+        <path d="M2 30L30.875 2" stroke="#A8A8A8" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"></path>
+        <path d="M10.4219 2H30.875V21.8333" stroke="#A8A8A8" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"></path>
+      </svg>
+    </div>
+  </a>
+
+  <!-- News Item 2 -->
+  <a href="#" class="d-flex align-items-center mb-3 pb-3 border-bottom news-item ps-2 text-decoration-none text-dark">
+    <img src="./media/banner2.jpg" alt="News 2" class="me-3 rounded d-none d-md-block" style="width:90px; height:90px; object-fit:cover;">
+    <div class="d-flex justify-content-between align-items-start w-100">
+      <div>
+        <small class="text-muted date-with-icon d-flex align-items-center">
+          <img src="./media/date.svg" alt="Date Icon" style="width: 16px; height: 16px; margin-right: 5px;">
+          JUNE 5, 2024
+        </small>
+        <p class="mb-0 mt-1">
+          Prefabricated Telecom Data Centre Modules<br>
+          Tested in Croatia
+        </p>
+      </div>
+      <svg width="28" height="29"  style="position: relative; top: 30px;" viewBox="0 0 33 32" fill="none" xmlns="http://www.w3.org/2000/svg" class="d-none d-md-block hover-red">
+        <path d="M2 30L30.875 2" stroke="#A8A8A8" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"></path>
+        <path d="M10.4219 2H30.875V21.8333" stroke="#A8A8A8" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"></path>
+      </svg>
+    </div>
+  </a>
+
+  <!-- News Item 3 -->
+  <a href="#" class="d-flex align-items-center news-item ps-2 text-decoration-none text-dark">
+    <img src="./media/banner3.jpg" alt="News 3" class="me-3 rounded d-none d-md-block" style="width:90px; height:90px; object-fit:cover;">
+    <div class="d-flex justify-content-between align-items-start w-100">
+      <div>
+        <small class="text-muted date-with-icon d-flex align-items-center">
+          <img src="./media/date.svg" alt="Date Icon" style="width: 16px; height: 16px; margin-right: 5px;">
+          MAY 25, 2024
+        </small>
+        <p class="mb-0 mt-1">
+          Showcasing Hybrid Solutions for MNOs<br>
+          TowerCos in Kenya!
+        </p>
+      </div>
+      <svg width="28" height="29" style="position: relative; top: 30px;" viewBox="0 0 33 32" fill="none" xmlns="http://www.w3.org/2000/svg" class="d-none d-md-block hover-red">
+        <path d="M2 30L30.875 2" stroke="#A8A8A8" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"></path>
+        <path d="M10.4219 2H30.875V21.8333" stroke="#A8A8A8" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"></path>
+      </svg>
+    </div>
+  </a>
+
+
+
+    </div>
+  </div>
+</div>
 
       <!-- Welcome Card Slider (Right Column) -->
       <div class="col-md-4 d-flex flex-column">
@@ -254,7 +259,7 @@
       <section class="energy-story bg-white py-5">
         <div class="container">
           <div class="d-flex align-items-start mb-4 gap-4">
-            <div style="max-width: 50%;">
+            <div style="max-width: 50%;" class="responsive-title-container">
               <h3 style="font-size:3rem; font-weight:bold; line-height: 1.2; margin-bottom: 0;">
                 Capturing Our Energy<br>
                 <span style="color: black;">
@@ -266,7 +271,7 @@
                 </span>
               </h3>
             </div>
-          
+                      
             <p class="text-secondary" style="max-width: 50%; line-height: 1.4; margin-bottom: 0; margin-left: 18rem; margin-top: 3rem; ">
               We continuously evolve, leveraging advanced technologies<br>
               and creative solutions to shape our unique energy story<br>
@@ -282,7 +287,7 @@
 
     <!-- Photo Badge -->
     <span class="position-absolute top-5 end-0 mt-5 badge d-flex align-items-center gap-1"
-      style="font-size: 1.1rem; padding: 0.6em 1em; border-radius: 6px 0 0 6px; background: linear-gradient(90deg, rgba(0,139,46,0.8) 0%, rgba(0,240,60,0.8) 100%); color: #fff;">
+      style="font-size: 1.1rem; padding: 0.6em 1em; border-radius: 6px 0 0 6px; background: rgba(78, 174, 0, 0.5); color: #fff;">
       <i class="bi bi-image"></i> 10
     </span>
 
@@ -306,7 +311,7 @@
 
     <!-- Photo Badge -->
     <span class="position-absolute top-5 end-0 mt-5 badge d-flex align-items-center gap-1"
-      style="font-size: 1.1rem; padding: 0.6em 1em; border-radius: 6px 0 0 6px; background: linear-gradient(90deg, rgba(0,139,46,0.8) 0%, rgba(0,240,60,0.8) 100%); color: #fff;">
+      style="font-size: 1.1rem; padding: 0.6em 1em; border-radius: 6px 0 0 6px; background: rgba(78, 174, 0, 0.5); color: #fff;">
       <i class="bi bi-image"></i> 18
     </span>
 
@@ -328,7 +333,7 @@
 
     <!-- Photo Badge -->
     <span class="position-absolute top-5 end-0 mt-5 badge d-flex align-items-center gap-1"
-      style="font-size: 1.1rem; padding: 0.6em 1em; border-radius: 6px 0 0 6px; background: linear-gradient(90deg, rgba(0,139,46,0.8) 0%, rgba(0,240,60,0.8) 100%); color: #fff;">
+      style="font-size: 1.1rem; padding: 0.6em 1em; border-radius: 6px 0 0 6px; background: rgba(78, 174, 0, 0.5); color: #fff;">
       <i class="bi bi-image"></i> 5
     </span>
 
